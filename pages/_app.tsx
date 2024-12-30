@@ -12,14 +12,15 @@ import { UserProvider } from '../src/context/UserContext';
 import { SHOULD_USE_FIREBASE_EMULATOR } from '../src/dev_constants';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyC2C7XWrCKcmM0RDAVZZHDQSxOlo6g3JTU',
-  authDomain: 'cp-ide-2.firebaseapp.com',
-  databaseURL: 'https://cp-ide-2-default-rtdb.firebaseio.com',
-  projectId: 'cp-ide-2',
-  storageBucket: 'cp-ide-2.appspot.com',
-  messagingSenderId: '1010490112765',
-  appId: '1:1010490112765:web:bd1ba8b522169c1eb45c94',
-  measurementId: 'G-9C903QL4KZ',
+  apiKey: 'AIzaSyBqs7G-NwRklV7JZAS9V913xIb479bt7uw',
+  authDomain: 'ideinnit2.firebaseapp.com',
+  projectId: 'ideinnit2',
+  databaseURL:
+    'https://ideinnit2-default-rtdb.asia-southeast1.firebasedatabase.app',
+  storageBucket: 'ideinnit2.firebasestorage.app',
+  messagingSenderId: '11134511326',
+  appId: '1:11134511326:web:8966869859776488a17a4f',
+  measurementId: 'G-26QQ4H89NF',
 };
 
 if (!firebase.apps?.length) {
@@ -27,7 +28,7 @@ if (!firebase.apps?.length) {
     firebase.initializeApp({
       ...firebaseConfig,
       authDomain: 'localhost:9099',
-      databaseURL: 'http://localhost:9000/?ns=cp-ide-2-default-rtdb',
+      databaseURL: 'http://localhost:9000/?ns=ideinnit2-default-rtdb',
     });
     firebase.auth().useEmulator('http://localhost:9099');
     firebase.database().useEmulator('localhost', 9000);
